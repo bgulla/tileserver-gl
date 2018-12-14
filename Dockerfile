@@ -28,7 +28,7 @@ RUN mkdir -p /usr/src/app
 COPY ./ /usr/src/app
 
 
-#COPY ./data /data
+COPY ./data /data
 RUN chown -R 1001:0 /data && \
   chmod -R g+rwX /data && chmod -R 777 /data
 
