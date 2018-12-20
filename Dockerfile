@@ -40,5 +40,5 @@ RUN chown -R 1001:0 /usr/src/app && \
 USER 1001
 
 
-#ENTRYPOINT ["node", "/usr/src/app/", "-p", "8080", "--mbtiles","/data/osm-2018-11-12-v3.8-us_virginia.mbtiles"]
-ENTRYPOINT ["node", "/usr/src/app/", "-p", "8080"]
+ENTRYPOINT ["node", "/usr/src/app/", "-p", "8080", "--mbtiles","/data/osm-2018-11-12-v3.8-us_virginia.mbtiles"]
+#ENTRYPOINT ["node", "/usr/src/app/", "-p", "8080"]
